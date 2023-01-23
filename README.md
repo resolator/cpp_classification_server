@@ -9,7 +9,12 @@ docker build -t cpp_server ./docker/
 
 To start the server run the docker container using the following command:
 ```sh
-docker run -d --name cpp_server --gpus 0 -p 80:80 cpp_server
+docker run -d --name cpp_server -p 80:80 cpp_server
+```
+
+You can also pull the image from the dockerhub:
+```sh
+docker run -d --name cpp_server -p 80:80 resolator/cpp_classification_server:latest
 ```
 
 ## Example usage
